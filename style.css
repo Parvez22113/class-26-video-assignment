@@ -566,22 +566,34 @@ ul.main-header-menu li:hover ul{
                         flex: 0 1 auto;
                         width: 14px !important;
                         height: 14px !important;
-                        border: 9px solid yellow !important;
+                        border: 2px solid yellow !important;
                         border-radius: 50% !important;
                         padding: 0;
                         margin-right: 3px;
                         margin-left: 3px;
                         text-indent: -999px;
                         cursor: pointer;
-                        background-color: #fff;
+                        background-color: red !important;
                         background-clip: padding-box;
                         border: 0;
-                        border-top:0 !important;
-                        border-bottom:0 !important;
-                        opacity: .5;
+                        border-top: 2px solid yellow !important;
+                        border-bottom: 2px solid yellow!important;
+                        opacity: none !important;
                         transition: opacity .6s ease;
+                        position: relative;
+                        left: 1116px;
+                        right: 27px;
+                        bottom: 146px;
+                        display: flex;
+                        margin-bottom: 10px;
+                        flex-direction: column;
                     }
-                    .clients-contain {
+                    /* .clients-contain {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                    } */
+                    .clients-contain{
                         display: flex;
                         flex-direction: column;
                         justify-content: center;
@@ -590,7 +602,37 @@ ul.main-header-menu li:hover ul{
                         display: flex;
                         align-content: center;
                     }
+                    .carousel-indicators {
+                        display: flex;
+                        flex-direction: column;
+                        position: absolute;
+                    }
 
+                .clients-section{
+                    position: relative;
+                }
+                .clients-section img{
+                    width: 100%;
+                }
+                .icon-clients span {
+                    color: #000;
+                    font-size: 40px;
+                    position: absolute;
+                    bottom: 98px;
+                    left: 141px;
+                    width: 80px;
+                    height: 80px;
+                    line-height: 79px;
+                    display: inline-block;
+                    text-align: center;
+                    background-color: #fff;
+                    border-radius: 50%;
+                    transition: .6s;
+                }
+                .icon-clients span:hover{
+                    color: #fff;
+                    background-color: #e73639;
+                }
 
 
 
